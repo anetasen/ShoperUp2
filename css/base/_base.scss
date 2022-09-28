@@ -3,13 +3,14 @@
     -webkit-font-smoothing: antialiased;
 }
 
-html, body {
+html {
     min-height: 100%;
 }
 
 body {
+    min-height: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color: #fafafa;
+    background-color: $bg-light;
     font-size: 14px;
 }
 
@@ -26,11 +27,11 @@ ul {
 
 a {
     text-decoration: none;
-    color: #3095F6;
-}
+    color: $color-secondary;
 
-a:hover {
-    text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .hidden {
