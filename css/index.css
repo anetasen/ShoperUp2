@@ -455,13 +455,19 @@ input:focus {
   overflow: hidden;
 }
 .image-square.has-border {
-  border: 1px solid #dbdbdb;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dbdbdb;
 }
 .image-square.is-active {
-  border: 2px solid #DD2A7C;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #DD2A7C;
 }
 .image-square.is-active img {
-  border: 1px solid #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
   border-radius: 100%;
 }
 .image-square--small {
