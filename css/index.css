@@ -322,6 +322,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fafafa;
   font-size: 14px;
+  background-image: linear-gradient(white, #E4BECF);
 }
 
 img {
@@ -410,6 +411,7 @@ input:focus {
   padding: 10px 0;
   background-color: #ffffff;
   border-bottom: 1px solid #dbdbdb;
+  box-shadow: 4px 4px 4px #e4e4e4;
 }
 .page-header__wrapper {
   display: flex;
@@ -422,6 +424,14 @@ input:focus {
 .page-header__logo img {
   display: block;
 }
+.page-header__logo::after {
+  content: "BETA";
+  color: #000000;
+  font-size: 12px;
+}
+.page-header__logo:hover {
+  text-decoration: none;
+}
 .page-header__search {
   display: none;
 }
@@ -429,6 +439,11 @@ input:focus {
   .page-header__search {
     display: block;
   }
+}
+.page-header.fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .page-nav {

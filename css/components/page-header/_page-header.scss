@@ -3,6 +3,7 @@
     padding: 10px 0;
     background-color: $color-white;
     border-bottom: 1px solid $text-light;
+    box-shadow: 4px 4px 4px #e4e4e4;
 
     &__wrapper {
         display: flex;
@@ -16,6 +17,16 @@
         img {
             display: block;
         }
+
+        &::after{
+            content:"BETA";
+            color:#000000;
+            font-size:12px;
+        }
+
+        &:hover{
+            text-decoration: none;
+        }
     }
 
     &__search {
@@ -24,6 +35,11 @@
         @media screen and (min-width: 800px) {
             display: block;
         }
+    }
+    
+    &.fixed{
+        position: sticky;
+        top: 0;
     }
 }
 
